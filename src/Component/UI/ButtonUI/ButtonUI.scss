@@ -1,0 +1,13 @@
+.ButtonUI {
+	background-color: #0167ff;
+	color: #ffffff;
+	border-radius: 15px;
+	padding: 10px 15px;
+	font-size: 17px;
+	&:hover {
+		background-color: #374d6d;
+	}
+	&:active {
+		color: black;
+	}
+}

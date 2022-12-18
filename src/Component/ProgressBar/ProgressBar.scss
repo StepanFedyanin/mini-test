@@ -1,0 +1,34 @@
+.ProgressBar {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: fit-content;
+	&__list {
+		display: flex;
+		&--item {
+			margin: 0 10px;
+			border: 1px solid #afb6b3;
+			border-radius: 50%;
+			padding: 10px 5px;
+		}
+		&--shine {
+			margin: 0 10px;
+			border: 1px solid #afb6b3;
+			border-radius: 50%;
+			padding: 10px 5px;
+			background-color: #0167ff;
+			color: #ffffff;
+			transition: all 0.8s;
+		}
+	}
+	&__show {
+		height: 5px;
+		width: 100%;
+		background-color: #afb6b3;
+		&--after {
+			height: 100%;
+			background-color: #0167ff;
+			transition: all 0.8s;
+		}
+	}
+}
