@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/mini-test/static/css/main.9032986a.css",
+    "main.js": "/mini-test/static/js/main.16dd08f8.js",
+    "static/media/philosifia.png": "/mini-test/static/media/philosifia.d35e04393b94ce0aa493.png",
+    "index.html": "/mini-test/index.html",
+    "main.9032986a.css.map": "/mini-test/static/css/main.9032986a.css.map",
+    "main.16dd08f8.js.map": "/mini-test/static/js/main.16dd08f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9032986a.css",
+    "static/js/main.16dd08f8.js"
+  ]
+}
