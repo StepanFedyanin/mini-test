@@ -7,13 +7,13 @@ function FooterContent() {
 		<div className='footer'>
 			<div className="footer__container">
 				<div className="footer__container--description">
-					<p>Выполнил: Федянин Степан Олегович</p>
+					<p className='footer__description--name'>Выполнил: Федянин Степан Олегович</p>
 				</div>
 				<div className="footer__container--connection">
-					<a className='footer__connection--item' href="">
+					<a className='footer__connection--item' href="https://web.telegram.org/k/#@bb_fedyanin">
 						<img src={telegramIcon} alt="" />
 					</a>
-					<a className='footer__connection--item' href="">
+					<a className='footer__connection--item' href="https://vk.com/bb_fedyanin">
 						<img src={vkIcon} alt="" />
 					</a>
 				</div>

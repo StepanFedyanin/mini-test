@@ -4,31 +4,33 @@
 	flex-direction: column;
 	width: fit-content;
 	&__list {
+		margin-bottom: 15px;
 		display: flex;
 		&--item {
 			margin: 0 10px;
 			border: 1px solid #afb6b3;
-			border-radius: 50%;
-			padding: 10px 5px;
+			border-radius: 20px;
+			padding: 7px 10px;
 		}
 		&--shine {
 			margin: 0 10px;
-			border: 1px solid #afb6b3;
-			border-radius: 50%;
-			padding: 10px 5px;
+			border-radius: 20px;
+			padding: 7px 10px;
 			background-color: #0167ff;
 			color: #ffffff;
 			transition: all 0.8s;
 		}
 	}
 	&__show {
-		height: 5px;
+		height: 4px;
 		width: 100%;
 		background-color: #afb6b3;
+		border-radius: 20px;
 		&--after {
 			height: 100%;
 			background-color: #0167ff;
 			transition: all 0.8s;
+			border-radius: 20px;
 		}
 	}
 }

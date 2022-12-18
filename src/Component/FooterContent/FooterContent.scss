@@ -9,6 +9,12 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		&--description {
+			.footer__description--name {
+				font-size: 17px;
+				font-weight: 300;
+			}
+		}
 		&--connection {
 			display: flex;
 			.footer__connection--item {

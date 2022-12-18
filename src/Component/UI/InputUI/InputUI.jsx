@@ -1,25 +1,27 @@
 import React from 'react'
-
-function InputUI({ name, text, answer_right }) {
+import './InputUI.scss'
+function InputUI({ name, text, answer_right, type, width = false }) {
 	const onChangeUserAnswer = (e) => {
 		e.target.removeAttribute('data-answer-user');
-		if (e.target.checked && answer_right) {
+		if (e.target.checked) {
 			e.target.setAttribute("data-answer-user", e.target.checked);
 		} else {
 			e.target.setAttribute("data-answer-user", '');
 		}
 	}
 	return (
-		<div>
+		<div className={width ? 'InputUI--half' : "InputUI"}>
 			<input
-				type="checkbox"
+				className={type == 'radio' ? 'InputUI__radio' : 'InputUI__checkbox'}
+				type={type}
 				id={name}
+				name={type}
 				data-answer-right={answer_right}
 				data-answer-user=''
 				// onChange={e => console.log(e.target.checked)}
 				onChange={(e) => onChangeUserAnswer(e)}
 			/>
-			<label htmlFor={name}>{text}</label>
+			<label className='InputUI__label' htmlFor={name}>{text}</label>
 		</div>
 	)
 }

@@ -35,17 +35,24 @@ function AnswerPage() {
 			<ProgressBar params={params.number} />
 			<div className="answer__content">
 				<div className="answer__content--title">
-					<h1>{qestionContent.title}</h1>
+					<h1 className='answer__title--style'>{qestionContent.title}</h1>
 				</div>
-				<div className="answer__content--list" ref={answer_list}>
+				<div className={qestionContent.width ? 'answer__content--list' : "answer__content--list__width"} ref={answer_list}>
 					{
 						qestionContent.qestion.map((item) =>
-							<InputUI key={item.qestion__id} name={item.qestion__id} text={item.qestion__text} answer_right={item.qestion__answer} />
+							<InputUI
+								key={item.qestion__id}
+								width={item.qestion__width}
+								type={item.qestion__type}
+								name={item.qestion__id}
+								text={item.qestion__text}
+								answer_right={item.qestion__answer}
+							/>
 						)
 					}
 				</div>
 				<div className="answer__content--btn">
-					<ButtonUI func={checkAnswer} href={"/answer/" + (Number(params.number) + 1)}>Следующий вопрос</ButtonUI>
+					<ButtonUI func={checkAnswer} href={params.number < qestion__list.length - 1 ? ("/answer/" + (Number(params.number) + 1)) : '/results'}>Следующий вопрос</ButtonUI>
 				</div>
 			</div>
 			<FooterContent />
