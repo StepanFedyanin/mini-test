@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/mini-test/static/css/main.c8026c61.css",
-    "main.js": "/mini-test/static/js/main.001a00a3.js",
+    "main.css": "/mini-test/static/css/main.da1bc689.css",
+    "main.js": "/mini-test/static/js/main.8f4f87c3.js",
     "static/media/philosifia.png": "/mini-test/static/media/philosifia.d35e04393b94ce0aa493.png",
     "index.html": "/mini-test/index.html",
-    "main.c8026c61.css.map": "/mini-test/static/css/main.c8026c61.css.map",
-    "main.001a00a3.js.map": "/mini-test/static/js/main.001a00a3.js.map"
+    "main.da1bc689.css.map": "/mini-test/static/css/main.da1bc689.css.map",
+    "main.8f4f87c3.js.map": "/mini-test/static/js/main.8f4f87c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8026c61.css",
-    "static/js/main.001a00a3.js"
+    "static/css/main.da1bc689.css",
+    "static/js/main.8f4f87c3.js"
   ]
 }
