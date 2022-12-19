@@ -21,7 +21,7 @@ function StartPage() {
 							</p>
 						</div>
 						<div className="startPage__description--btn">
-							<ButtonUI href="/answer/0">Разгадать шифрование</ButtonUI>
+							<ButtonUI href="/mini-test/answer/0">Разгадать шифрование</ButtonUI>
 						</div>
 					</div>
 				</div>

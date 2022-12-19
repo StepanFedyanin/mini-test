@@ -55,7 +55,7 @@ function AnswerPage() {
 					}
 				</div>
 				<div className="answer__content--btn">
-					<ButtonUI func={checkAnswer} href={params.number < qestion__list.length - 1 ? ("/answer/" + (Number(params.number) + 1)) : '/results'}>Следующий вопрос</ButtonUI>
+					<ButtonUI func={checkAnswer} href={params.number < qestion__list.length - 1 ? ("/mini-test/answer/" + (Number(params.number) + 1)) : '/mini-test/results'}>Следующий вопрос</ButtonUI>
 				</div>
 			</div>
 			<FooterContent />
