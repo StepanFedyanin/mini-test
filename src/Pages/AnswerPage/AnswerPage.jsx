@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import FooterContent from '../../Component/FooterContent/FooterContent'
@@ -30,6 +30,9 @@ function AnswerPage() {
 			dispath(ChangeShow(params.number))
 		}
 	}
+	function shuffle(array) {
+		return array.sort(() => Math.random() - 0.5);
+	}
 	return (
 		<div className='answer'>
 			<ProgressBar params={params.number} />
@@ -39,7 +42,7 @@ function AnswerPage() {
 				</div>
 				<div className={qestionContent.width ? 'answer__content--list' : "answer__content--list__width"} ref={answer_list}>
 					{
-						qestionContent.qestion.map((item) =>
+						shuffle(qestionContent.qestion.slice(0)).map((item) =>
 							<InputUI
 								key={item.qestion__id}
 								width={item.qestion__width}

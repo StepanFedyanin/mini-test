@@ -2,42 +2,52 @@ const defaultState = [
 	{
 		text: 'Все',
 		secret: false,
-		secretText: '???'
+		secretText: '???',
+		id_table: "firstWord"
 	},
 	{
 		text: 'мы',
 		secret: false,
-		secretText: '??'
+		secretText: '??',
+		id_table: "secondWord"
 	},
 	{
 		text: 'ценим',
 		secret: false,
-		secretText: '?????'
+		secretText: '?????',
+		id_table: "thirdWord"
+
 	},
 	{
 		text: 'добро,',
 		secret: false,
-		secretText: '?????'
+		secretText: '?????',
+		id_table: "fourthWord"
 	},
 	{
 		text: 'лишь',
 		secret: false,
-		secretText: '????'
+		secretText: '????',
+		id_table: "fifthWord"
+
 	},
 	{
 		text: 'теряя',
 		secret: false,
-		secretText: '?????'
+		secretText: '?????',
+		id_table: "sixthWord"
 	},
 	{
 		text: 'его',
 		secret: false,
-		secretText: '???'
+		secretText: '???',
+		id_table: "seventhWord"
 	},
 	{
 		text: 'невозвратно',
 		secret: false,
-		secretText: '???????????'
+		secretText: '???????????',
+		id_table: "eighthWord"
 	},
 ]
 
